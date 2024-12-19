@@ -27,19 +27,18 @@ for num_preg, pregunta in enumerate(lista):
     elif comodin_usado:
         eleccion = input("Elige la opción (1-4) (6) para plantarse): ")
 
-    # Elegir
+    #elegir
     if not comodin_usado and eleccion_comodin == "s":
             time.sleep(1)
             print(" ")
             print("Acabas de saltar la pregunta! jeje XD.")
             comodin_usado = True
-
             continue
     elif eleccion_comodin == "s":
         print(" Recordatorio: !Ya usaste el comodín¡")
     print(" ")
-
     time.sleep(1)
+
     if eleccion == '6':
         time.sleep(1)
         print(" ")
