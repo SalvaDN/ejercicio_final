@@ -9,7 +9,7 @@ puntos = 0
 comodin_usado = False
 eleccion_comodin = None
 
-# Juego
+#juego
 for num_preg, pregunta in enumerate(lista):
     print("\n----------------------------------------")
     print(f"Pregunta {num_preg + 1}:")
@@ -17,7 +17,7 @@ for num_preg, pregunta in enumerate(lista):
     opciones = pregunta['incorrect_answers'] + [pregunta['correct_answer']]
     random.shuffle(opciones)
 
-    # Printeo
+    #printeo
     print(pregunta['question'])
     for respuestas, opcion in enumerate(opciones, 1):
         print(f"{respuestas}) {opcion}")
